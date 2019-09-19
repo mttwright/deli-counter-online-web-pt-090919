@@ -6,5 +6,6 @@ end
 
 def take_a_number(array, string)
   array.push(string)
-  puts "welcome, #{string}. You"
+  position = array.index(string) + 1
+  puts "welcome, #{string}. You are number #{position} in line."
 end
