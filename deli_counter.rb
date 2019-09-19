@@ -7,11 +7,11 @@ def line(array)
     puts "The line is currently empty."
   else
     counter = 1
-    array.collect! do |names|
+    list = array.collect do |names|
       "#{counter}. " + names + " "
       counter += 1
     end
-    sentence = array.join
+    sentence = list.join
     sentence.chop!
     puts "The line is currently: " + sentence
   end
