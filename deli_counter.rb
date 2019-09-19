@@ -25,3 +25,14 @@ def take_a_number(array, string)
   puts "Welcome, #{string}. You are number #{position} in line."
   array
 end
+
+
+
+
+def now_serving(array)
+  puts "Currently serving #{array.shift}."
+end
+  
+  
+  
+  
