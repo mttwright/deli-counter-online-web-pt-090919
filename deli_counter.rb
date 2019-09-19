@@ -10,6 +10,7 @@ def line(array)
       "1. " + names + " "
     end
     "The line is currently: " + people.join
+  end
 end
 
 def take_a_number(array, string)
