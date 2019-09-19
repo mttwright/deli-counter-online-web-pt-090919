@@ -4,6 +4,7 @@ def line
   
 end
 
-def take_a_number
-
+def take_a_number(array, string)
+  array.push(string)
+  puts
 end
