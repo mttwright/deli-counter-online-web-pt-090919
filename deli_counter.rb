@@ -9,13 +9,13 @@ def line(array)
     people = array.collect do |names|
       "1. " + names + " "
     end
-    "The line is currently: " + people.join
+    puts "The line is currently: " + people.join
   end
 end
 
 def take_a_number(array, string)
   array.push(string)
   position = array.index(string) + 1
-  "welcome, #{string}. You are number #{position} in line."
+  puts "welcome, #{string}. You are number #{position} in line."
   array
 end
