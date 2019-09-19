@@ -11,7 +11,9 @@ def line(array)
       counter += 1
       "#{counter}. " + names + " "
     end
-    puts list
+    sentence = list.join
+    sentence.chop!
+    puts "The line is currently: " + sentence
   end
 end
 
