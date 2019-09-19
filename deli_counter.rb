@@ -12,7 +12,7 @@ def line(array)
       "#{counter}. " + names + " "
     end
     sentence = list.join
-    sentence.chop
+    sentence.chop!
     puts "The line is currently: " + sentence
   end
 end
