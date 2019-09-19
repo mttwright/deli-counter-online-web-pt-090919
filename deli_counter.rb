@@ -6,8 +6,10 @@ def line(array)
   if array.length == 0
     puts "The line is currently empty."
   else
-    people = []
-    
+    people = array.collect do |names|
+      "1. " + names + " "
+    end
+    "The line is currently: " + people.join
 end
 
 def take_a_number(array, string)
