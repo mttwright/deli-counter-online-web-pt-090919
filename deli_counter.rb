@@ -6,14 +6,16 @@ def line(array)
   if array.length == 0
     puts "The line is currently empty."
   else
-    counter = 1
+    counter = 0
     list = array.collect do |names|
-      "#{counter}. " + names + " "
       counter += 1
+      "#{counter}. " + names + " "
     end
     puts list
   end
 end
+
+
 
 def take_a_number(array, string)
   array.push(string)
