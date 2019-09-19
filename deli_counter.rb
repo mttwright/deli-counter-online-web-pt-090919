@@ -6,10 +6,14 @@ def line(array)
   if array.length == 0
     puts "The line is currently empty."
   else
+    counter = 1
     array.collect! do |names|
-      "1. " + names + " "
+      "#{counter}. " + names + " "
+      counter += 1
     end
-    puts "The line is currently: " + array.join
+    sentence = array.join
+    sentence.chop!
+    puts "The line is currently: " + sentence
   end
 end
 
